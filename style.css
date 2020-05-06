@@ -1,0 +1,124 @@
+:root {
+    --primary-color:#333;
+    --secondary-color:rgba(69, 71, 223, 0.459);
+    font-size: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--primary-color);
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+button {
+    margin: 0 auto;
+}
+span {
+    font-size: 2rem;
+    color:#fff;
+}
+/* Utilities */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 1rem auto;
+  max-width: 80rem;
+  padding: 2rem; 
+}
+
+.btn {
+  font-size: 1.8rem;
+  padding: 1.5rem 0;
+  width: 20rem;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
+.flex-col {
+    flex-direction: column;
+}
+
+
+p.option {
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--secondary-color);
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 1rem 0.5rem;
+    color: #444;
+}
+.hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.correct {
+    background: green;
+    color: white;
+}
+p.incorrect {
+    background: red;
+    color: white;
+}
+.options p.disabled {
+    pointer-events: none;
+}
+.game-over{
+    position: fixed;
+    color: var(--primary-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    z-index: 10;
+    display: none;
+    align-items:center;
+    justify-content: center;
+}
+
+.game-over .box {
+    background: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-align: center;
+    flex-basis: 70rem;
+    max-width: 70rem;
+    color: var(--primary-color);
+}
+.game-over .box span {
+    color: var(--primary-color);
+}
+.game-over .box button {
+    background: var(--primary-color);
+    color: #fff;
+}

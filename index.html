@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="flex-center flex-col">
+            <div class="hud">
+                <div class="hud-items">
+                    <p class="hud-text">Question
+                        <span class="currentQuestion"></span>of
+                        <span class="totalQuestion"></span>
+                    </p>
+                </div>
+                <div class="hud-items">
+                    <p class="hud-text">Score:
+                        <span class="score">0</span>
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="questions">
+                <h1 class="question">What is not mine name?</h1>
+                <div class="options">
+                    <p id="0" class=" option option-1" onclick="isCorrect(this)">Option-1</p>
+                    <p id="1" class="option option-2" onclick="isCorrect(this)">Option-2</p>
+                    <p id="2" class="option option-3" onclick="isCorrect(this)">Option-3</p>
+                    <p id="3" class="option option-4" onclick="isCorrect(this)">Option-4</p>
+                </div>
+                <button class="btn" onclick="next()">Next</button>
+            </div>
+            <div class="game-over">
+               <div class="box">
+                    <h1>Game Over!</h1>
+                    <p>You got <span class="finalScore"></span> out of <span class="totalScore"></span></p>
+                    <button class="btn" onclick="playAgain()">Play Again</button>
+               </div>
+            </div>
+        </div>
+        
+        
+          
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
